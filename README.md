@@ -47,24 +47,30 @@ Shared with: [NorthBay], [19th August 2025]
 ## Installation 
 
 from CMD -
-Install Dependencies : pip install -r requirements.txt
-python -m playwright install chromium
-Install Allure (if not already installed)download allure.zip  from  https://github.com/allure-framework/allure2/releases
-Update system env var  Path to bin directory of allure
+
+Clone Repo : https://github.com/RohiniAutomationDataScience/GenAI-ChatBot_FinalRepo.git
+
+1. Install Dependencies : pip install -r requirements.txt
+2. python -m playwright install chromium
+3. Install Allure (if not already installed)download allure.zip  from  https://github.com/allure-framework/allure2/releases
+4. Update system env var  Path to bin directory of allure
 
 
 ## Running Tests
 
-To run tests, run the following command
+To run tests, run the following command 
+Go to CMD reach to project folder  "uask-e2e-ready" and run below commands
 
 ### to run all under specific class
-C:\Project\uask-e2e-ready>pytest tests/genai/test_against_golden.py --headed --maxfail=0 --alluredir=reports/allure-results --clean-alluredir
-allure serve reports/allure-results
+1. C:\Project\uask-e2e-ready>    pytest tests/genai/test_against_golden.py --headed --maxfail=0 --alluredir=reports/allure-results --clean-alluredir
+
+2. allure serve reports/allure-results
 
 OR 
 ### to run all under tests
-pytest tests/ --headed --maxfail=0 --alluredir=reports/allure-results --clean-alluredir   
-allure serve reports/allure-results
+1. pytest tests/ --headed --maxfail=0 --alluredir=reports/allure-results --clean-alluredir   
+
+2. allure serve reports/allure-results
 
 
 
