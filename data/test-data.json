@@ -1,0 +1,61 @@
+{
+  "prompts": [
+    {
+      "id": "faq_visa_en",
+      "lang": "en",
+      "user": "How can I renew my UAE visa?",
+      "golden": "You can renew your UAE residence visa through ICP or GDRFA portals. Check eligibility and submit biometrics if prompted.",
+      "threshold": 0.80,
+      "must_contain": ["ICP", "GDRFA", "biometric"]
+    },
+    {
+      "id": "eid_en",
+      "lang": "en",
+      "user": "How do I renew my Emirates ID?",
+      "golden": "Renew your Emirates ID through the ICP Smart Services portal. Submit biometrics if required and pay the renewal fee.",
+      "threshold": 0.80,
+      "must_contain": ["ICP", "Emirates ID", "biometric"]
+    },
+    {
+      "id": "faq_visa_ar",
+      "lang": "ar",
+      "user": "كيف أجدد تأشيرة الإقامة في الإمارات؟",
+      "golden": "يمكنك تجديد تأشيرة الإقامة من خلال منصات ICP أو GDRFA. تحقق من الأهلية وقدّم البيانات الحيوية إذا طُلب ذلك.",
+      "xl_threshold": 0.80,
+      "must_contain": ["ICP", "GDRFA", "البيانات الحيوية"]
+    },
+    {
+      "id": "eid_ar",
+      "lang": "ar",
+      "user": "كيف أجدد بطاقة الهوية الإماراتية؟",
+      "golden": "قم بتجديد بطاقة الهوية الإماراتية عبر منصة الخدمات الذكية ICP ودفع الرسوم وتقديم البيانات الحيوية إذا لزم الأمر.",
+      "xl_threshold": 0.80,
+      "must_contain": ["ICP", "بطاقة الهوية", "البيانات الحيوية"]
+    },
+	{
+	  "id": "gdrfa_hours_en",
+	  "lang": "en",
+	  "user": "What are the working hours of GDRFA Dubai?",
+	  "golden": "GDRFA Dubai operates Sunday to Thursday during typical government hours; check the official website for the latest timings.",
+	  "threshold": 0.80,
+	  "must_contain": ["GDRFA", "timings"]
+	},
+	{
+	  "id": "fallback_test_en",
+	  "lang": "en",
+	  "user": "!@#$%^&*() gibberish input 123",
+	  "golden": "I'm sorry, I'm not able to assist with your request",
+	  "threshold": 0.80,
+	  "must_contain": ["sorry", "not able to assist", "request"]
+	},
+	{
+	  "id": "fallback_test_ar",
+	  "lang": "ar",
+	  "user": "!@#$٪^&*() معلومات غير مفهومة 123",
+	  "golden": "عذرًا، لم أفهم ذلك. هل يمكنك إعادة الصياغة أو توضيح ما تعنيه؟",
+	  "xl_threshold": 0.80,
+	  "must_contain": ["عذرًا", "إعادة الصياغة", "توضيح"]
+	}
+	
+  ]
+}

@@ -1,0 +1,4 @@
+url=https://govgpt.sandbox.dge.gov.ae/c/0cb3abf6-d6ee-4158-ae66-30db72fa6bfa
+facts_hit=0/3
+base_thr=0.80
+eff_thr=0.80
